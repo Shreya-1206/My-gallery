@@ -7,10 +7,10 @@
     <style>
         body {
             text-align: center;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
         }
         h1 {
-            color: plum;
+            color: #7A316F;
         }
 
         .grid-container {
@@ -27,10 +27,14 @@
 
         .grid-container>div>img:hover {
             filter: brightness(50%);
+            transition: 2.5s all;
+            transform: scale(1.1);
         }
 
         .grid-container>div {
             position: relative;
+            overflow: hidden;
+            font-size: 1.2 rem;
         }
 
         .image-title {
@@ -39,8 +43,19 @@
             z-index: 2;
             color: white;
             left: 40%;
+            display: block;
+          }
 
-        }
+          .grid-container>div:hover {
+            font-size: 1.5rem;
+            transition: 0.4s all;
+          }
+          
+          .end {
+            text-align: center;
+            font-size: 2rem;
+            color: #7A316F;
+          }
     </style>
  </head>
   <body>
@@ -95,4 +110,7 @@
       </div>
     </div>  
    </body>
+   <footer>
+    <div class="end">Made with love -Shreya </div>
+   </footer>
 </html>
